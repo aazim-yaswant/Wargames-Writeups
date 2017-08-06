@@ -1,6 +1,6 @@
-passwords for next level is at /etc/narnia_pass
-problems and source code in /narnia 	:cd /narnia
-ssh narnia0@narnia.labs.overthewire.org -p 2226
+>passwords for next level is at /etc/narnia_pass
+>problems and source code in /narnia 	:cd /narnia
+>ssh narnia0@narnia.labs.overthewire.org -p 2226
 
 narnia0:
 
